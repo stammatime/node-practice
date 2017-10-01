@@ -21,7 +21,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
         $set: {name:"Caseye"},
         $inc: {age: 1}
     }, {
-        returnOrignal: false
+        returnOrignal: false // not sure why this isnt working
     }).then((result) =>{
         console.log(result);
     })
